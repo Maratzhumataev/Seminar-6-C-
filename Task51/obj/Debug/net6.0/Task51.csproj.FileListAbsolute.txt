@@ -1,0 +1,15 @@
+/Users/maratzhumataev/Мой Mac (iMac — MARAT)/Documents/Семинар 6 C#/Task51/obj/Debug/net6.0/Task51.csproj.AssemblyReference.cache
+/Users/maratzhumataev/Мой Mac (iMac — MARAT)/Documents/Семинар 6 C#/Task51/obj/Debug/net6.0/Task51.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maratzhumataev/Мой Mac (iMac — MARAT)/Documents/Семинар 6 C#/Task51/obj/Debug/net6.0/Task51.AssemblyInfoInputs.cache
+/Users/maratzhumataev/Мой Mac (iMac — MARAT)/Documents/Семинар 6 C#/Task51/obj/Debug/net6.0/Task51.AssemblyInfo.cs
+/Users/maratzhumataev/Мой Mac (iMac — MARAT)/Documents/Семинар 6 C#/Task51/obj/Debug/net6.0/Task51.csproj.CoreCompileInputs.cache
+/Users/maratzhumataev/Мой Mac (iMac — MARAT)/Documents/Семинар 6 C#/Task51/bin/Debug/net6.0/Task51
+/Users/maratzhumataev/Мой Mac (iMac — MARAT)/Documents/Семинар 6 C#/Task51/bin/Debug/net6.0/Task51.deps.json
+/Users/maratzhumataev/Мой Mac (iMac — MARAT)/Documents/Семинар 6 C#/Task51/bin/Debug/net6.0/Task51.runtimeconfig.json
+/Users/maratzhumataev/Мой Mac (iMac — MARAT)/Documents/Семинар 6 C#/Task51/bin/Debug/net6.0/Task51.dll
+/Users/maratzhumataev/Мой Mac (iMac — MARAT)/Documents/Семинар 6 C#/Task51/bin/Debug/net6.0/Task51.pdb
+/Users/maratzhumataev/Мой Mac (iMac — MARAT)/Documents/Семинар 6 C#/Task51/obj/Debug/net6.0/Task51.dll
+/Users/maratzhumataev/Мой Mac (iMac — MARAT)/Documents/Семинар 6 C#/Task51/obj/Debug/net6.0/refint/Task51.dll
+/Users/maratzhumataev/Мой Mac (iMac — MARAT)/Documents/Семинар 6 C#/Task51/obj/Debug/net6.0/Task51.pdb
+/Users/maratzhumataev/Мой Mac (iMac — MARAT)/Documents/Семинар 6 C#/Task51/obj/Debug/net6.0/Task51.genruntimeconfig.cache
+/Users/maratzhumataev/Мой Mac (iMac — MARAT)/Documents/Семинар 6 C#/Task51/obj/Debug/net6.0/ref/Task51.dll
