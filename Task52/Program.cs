@@ -13,7 +13,6 @@ int numberJ = Convert.ToInt32(Console.ReadLine());
 double[,] array2d = CreateMatrixRndInt(numberI, numberJ, 0, 10);
 PrintMatrix(array2d);
 double[] result = ArithMeanByColumns(array2d, numberI, numberJ);
-// double[] resultRound = Math.Round(result, 1);// не удается преобразовать из "double[]" в "decimal". сделал метод
 
 System.Console.WriteLine("Среднее арифметическое каждого столбца:");
 ResultRound(result);
