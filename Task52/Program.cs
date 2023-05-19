@@ -5,80 +5,58 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-Console.WriteLine("Задайте количество строк в массиве:");
-int numberI = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Задайте количество столбцов в массиве:");
-int numberJ = Convert.ToInt32(Console.ReadLine());
-
-double[,] array2d = CreateMatrixRndInt(numberI, numberJ, 0, 10);
-PrintMatrix(array2d);
-double[] result = ArithMeanByColumns(array2d, numberI, numberJ);
-
-System.Console.WriteLine("Среднее арифметическое каждого столбца:");
-ResultRound(result);
-System.Console.Write("[");
-PrintArray(result);
-System.Console.WriteLine("]");
-
-double[] ArithMeanByColumns(double[,] matrix, int numI, int numJ)
+int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 {
-
-    double[] array = new double[numJ];
-
-    for (int j = 0; j < matrix.GetLength(1); j++)
-    {
-        double sum = 0;
-        for (int i = 0; i < matrix.GetLength(0); i++)
-        {
-            sum += matrix[i, j];
-        }
-        array[j] = sum / numI;
-    }
-    return array;
+    int[,] matrix = new int[rows, columns];
+    Random rnd = new Random();
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            matrix[i, j] = rnd.Next (min, max + 1);
+        }
+    }
+    return matrix;
 }
 
-double[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
+void PrintMatrix (int[,] matrix)
 {
-
-    double[,] matrix = new double[rows, columns];
-    Random rnd = new Random();
-
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            matrix[i, j] = rnd.Next(min, max + 1);
-        }
-    }
-    return matrix;
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        Console.Write("|");
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            Console.Write($"{matrix[i, j], 5} ");
+        }
+        Console.WriteLine(" |");
+    }
 }
 
-void PrintMatrix(double[,] matrix)
+double[] AvgOfColumns (int[,] matrix)
 {
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        Console.Write("|");
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            Console.Write($"{matrix[i, j],5} ");
-        }
-        Console.WriteLine(" | ");
-    }
+    double[] avgArray = new double[matrix.GetLength(1)];
+    for (int j = 0; j < matrix.GetLength(1); j++)
+    {
+        double sum = 0;
+        for (int i = 0; i < matrix.GetLength(0); i++)
+        {
+            sum += matrix[i, j];
+        }
+        avgArray[j] = Math.Round((sum/matrix.GetLength(1)), 2); 
+    }
+    return avgArray;
 }
 
-void PrintArray(double[] arr)
+void PrintAvgMatrix (double[] avgArray)
 {
-    for (int i = 0; i < arr.Length; i++)
-    {
-        if (i < arr.Length - 1) Console.Write($"{arr[i]},   ");
-        else Console.Write($"{arr[i]}");
-    }
+    Console.WriteLine("Среднее арифметическое каждого столбца ровно");
+    for (int i = 0; i < avgArray.Length; i++)
+        {
+            Console.Write($"{avgArray[i], 5}; ");
+        }
 }
 
-void ResultRound(double[] arr)
-{
-    for (int i = 0; i < arr.Length; i++)
-    {
-        arr[i] = Math.Round(arr[i], 1);
-    }
-}
+int[,] matrix = CreateMatrixRndInt(3, 4, 0, 10);
+PrintMatrix(matrix);
+double[] averageArray = AvgOfColumns(matrix);
+PrintAvgMatrix(averageArray);
